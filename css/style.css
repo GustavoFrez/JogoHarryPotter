@@ -2,7 +2,7 @@ body {
   background-image: url("../img/bg-home-2.png");
   background-repeat: no-repeat;
   background-size: cover;
-  height: auto;
+  height: 100%;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -29,7 +29,7 @@ font-family: 'Anton', sans-serif;
   background-image: url("../img/bg-game-over.png");
   background-repeat: no-repeat;
   background-size: cover;
-  height: auto;
+  height: 100%;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -47,7 +47,7 @@ font-family: 'Anton', sans-serif;
   background-position: 25% 25%;
   background-repeat: no-repeat;
   background-size: cover;
-  height: auto;
+  height: 100%;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
