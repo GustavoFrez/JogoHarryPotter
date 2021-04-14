@@ -1,0 +1,213 @@
+body {
+  background-image: url("../img/bg-home-2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: auto;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+img {
+  width: 100%;
+}
+
+.containerFixed {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.fontHag {
+  font-family: "Mountains of Christmas", cursive;
+}
+
+/*
+font-family: 'Anton', sans-serif;
+*/
+
+/*GAME OVER*/
+
+.gameOver {
+  background-image: url("../img/bg-game-over.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: auto;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.boxLevelGameOver {
+  max-width: 960px;
+  height: auto;
+  background: rgba(88, 85, 90, 0.7);
+  margin: 40px 10px 10px 10px;
+}
+
+/*CHAMPION*/
+
+.champion {
+  background-image: url("../img/bg-champion.png");
+  background-position: 25% 25%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: auto;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.boxLevelChampion {
+  max-width: 960px;
+  height: auto;
+  background: rgba(88, 85, 90, 0.7);
+  margin: 40px 10px 10px 10px;
+}
+
+/*HOME*/
+
+.titleImg {
+  max-width: 400px;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+.titleHome {
+  font-size: 2em;
+  color: #fff;
+  text-align: center;
+  margin: 10px 20px;
+}
+
+.containerPersonage {
+  max-width: 960px;
+  height: auto;
+  background: rgba(88, 85, 90, 0.5);
+  margin: 30px 10px 10px 10px;
+}
+
+.textPersonage {
+  font-size: 1.5em;
+  line-height: 25px;
+  text-align: center;
+  color: #fff;
+  padding: 20px 10px 10px 10px;
+}
+
+.boxFlexPersonage {
+  display: flex;
+  justify-content: space-around;
+}
+
+.boxImgPersonage {
+  width: 200px;
+  margin-top: 15px;
+  text-align: center;
+}
+
+/*BUTTON*/
+
+.btn {
+  width: 200px;
+  height: 50px;
+  background: none;
+  border: 4px solid;
+  color: white;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-size: 15px;
+  position: relative;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.btnTransparent::before,
+.btnTransparent::after {
+  content: "";
+  position: absolute;
+  width: 14px;
+  height: 4px;
+  background: #4b4b4b;
+  transform: skewX(50deg);
+  transition: 0.4s linear;
+}
+
+.btn::before {
+  top: -4px;
+  left: 10%;
+}
+
+.btn::after {
+  bottom: -4px;
+  right: 10%;
+}
+
+.btn:hover::before {
+  left: 80%;
+}
+
+.btn:hover::after {
+  right: 80%;
+}
+
+.familyCrest {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 40px 0;
+}
+
+.familyCrest img {
+  width: 150px;
+}
+
+/*RESPONSIVE HOME */
+
+@media screen and (max-width: 750px) {
+  .boxFlexPersonage {
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+  }
+  .textPersonage {
+    font-size: 1em;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .titleHome {
+    font-size: 1.5em;
+    line-height: 40px;
+  }
+}
+
+/*FASE UM HARRY*/
+
+.boxLevel {
+  max-width: 960px;
+  height: auto;
+  background: rgba(88, 85, 90, 0.5);
+  margin: 40px 10px 10px 10px;
+}
+
+.boxTitle h1 {
+  font-size: 2.5em;
+  text-align: center;
+  color: #fff;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+.textLevel {
+  color: #fff;
+  text-align: center;
+  line-height: 30px;
+  margin: 0 20px;
+}
+
+.textLevel p {
+  font-size: 1.5em;
+  margin-top: 20px;
+}
+
+.centerButton {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
